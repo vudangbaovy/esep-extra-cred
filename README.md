@@ -2,9 +2,20 @@
 
 <h2>Running Instructions</h2>
 <ul>
-  <li> The program's driver is <code>main.cpp</code>.</li>
+  <li>Move <code>CMakeLists.txt</code> to the directory above the program files.</li>
+  <li>The program's driver is <code>main.cpp</code>.</li>
   <li> Compile main with <code>g++ -o main main.cpp</code> and run with <code>./main</code></li>
   <li> If running in CLion, <code>CMakeLists.txt</code> is already configured for the environment. Just hit run.</li>
+</ul>
+
+<h2>Expected Commands</h2>
+<ul>
+  <li><code>BEGIN TRANSACTION</code> starts a transaction.</li>
+  <li><code>PUT [key] [value]</code> creates/ add key-value pairing to map.</li>
+  <li><code>GET [key]</code> retrieves the value associated with the key.</li>
+  <li><code>COMMIT</code> commits the transaction to the main state.</li>
+  <li><code>ROLLBACK</code> reverts all changes made in the most recent transaction.</li>
+  <li><code>END</code> to exit the program.</li>
 </ul>
 
 <h2>Assignment Suggestions</h2>
